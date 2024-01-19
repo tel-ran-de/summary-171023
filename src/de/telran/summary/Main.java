@@ -49,16 +49,13 @@ public class Main {
                 2020,
                 "bike");
 
-        countBlackVehicles(new Vehicle[]{fordCar, hondaBike});
-    }
+        Vehicle vehicle = new CustomVehicle("234",
+                "Special in-house vehicle",
+                "Black",
+                150,
+                2020,
+                "super customer something");
 
-    private static void countBlackVehicles(Vehicle[] vehicles) {
-        int blackVehicles = 0;
-        for (Vehicle vehicle : vehicles) {
-            if (vehicle.color.equals("Black")) {
-                blackVehicles++;
-            }
-        }
-        System.out.println("Black vehicles = " + blackVehicles);
+        VehicleStatProcessor.countBlackVehicles(new Vehicle[]{fordCar, hondaBike, vehicle});
     }
 }
