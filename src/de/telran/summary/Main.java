@@ -31,7 +31,34 @@ public class Main {
 
         Person vasya = new Person("Vasya", 40, 170, 81);
 
-        System.out.println(anton.name);
-        System.out.println(ivan.name);
+//        System.out.println(anton.name);
+//        System.out.println(ivan.name);
+
+        Car fordCar = new Car("123",
+                "Ford",
+                "Black",
+                180,
+                2005,
+                "sedan",
+                4);
+
+        Motocycle hondaBike = new Motocycle("234",
+                "Honda",
+                "Black",
+                150,
+                2020,
+                "bike");
+
+        countBlackVehicles(new Vehicle[]{fordCar, hondaBike});
+    }
+
+    private static void countBlackVehicles(Vehicle[] vehicles) {
+        int blackVehicles = 0;
+        for (Vehicle vehicle : vehicles) {
+            if (vehicle.color.equals("Black")) {
+                blackVehicles++;
+            }
+        }
+        System.out.println("Black vehicles = " + blackVehicles);
     }
 }
