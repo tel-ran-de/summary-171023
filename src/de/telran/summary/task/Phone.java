@@ -14,4 +14,10 @@ public abstract class Phone {
         this.megaPx = megaPx;
         this.simCount = simCount;
     }
+
+    public String getDescription() {
+        return "Base phone";
+    }
+
+//    public abstract String getVersion();
 }

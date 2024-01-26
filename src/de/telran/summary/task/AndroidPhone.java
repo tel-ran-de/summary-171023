@@ -2,7 +2,7 @@ package de.telran.summary.task;
 
 public class AndroidPhone extends Phone {
 
-    String androidVersion;
+    public String androidVersion;
 
     public AndroidPhone(String model,
                         String color,
@@ -12,6 +12,11 @@ public class AndroidPhone extends Phone {
                         String androidVersion) {
         super(model, color, memory, megaPx, simCount);
         this.androidVersion = androidVersion;
+    }
+
+    //    @Override
+    public String getVersion() {
+        return androidVersion;
     }
 
     @Override
