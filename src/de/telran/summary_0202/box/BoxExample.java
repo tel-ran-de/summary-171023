@@ -23,5 +23,13 @@ public class BoxExample {
 
         System.out.println("big() == big() = " + (StaticOtherBoxType.big() ==
                 StaticOtherBoxType.big()));
+
+        BoxType[] boxTypes = new BoxType[]{BoxType.SMALL, BoxType.SMALL, BoxType.BIG};
+
+        BoxType[] smallBoxes = new BoxType[boxTypes.length];
+        BoxType[] bigBoxes = new BoxType[boxTypes.length];
+
+
+
     }
 }
