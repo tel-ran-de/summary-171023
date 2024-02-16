@@ -11,6 +11,7 @@ public class BoxExample {
         System.out.println("Box3 = " + box3.getType());
 
         System.out.println(BoxSize.SMALL.getTitle());
-        new BoxSize(123, "2");
+//        new BoxSize(123, "2");
     }
+
 }
