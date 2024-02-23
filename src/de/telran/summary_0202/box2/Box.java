@@ -21,5 +21,16 @@ public class Box {
         return boxSize;
     }
 
+//    public Box createBox() {
+//        Box<String> box = new Box<>(12);
+//        Box<Integer> box2 = new Box<>(12);
+//
+//        List<String> list = new ArrayList<>();
+//        List<Double> list2 = new ArrayList<>();
 
+//        list = list2;
+//
+//        box = box2;
+//        return box;
+//    }
 }
